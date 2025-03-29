@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator | ARIJIT SAHOO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="logo">
+            <i class="fas fa-magic"></i>
+            <span>AI Art Studio</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-history"></i> History</a></li>
+            <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="generator-box">
+            <h1 class="title">Transform Text to Image</h1>
+            
+            <div class="input-group">
+                <textarea id="prompt" placeholder="Describe your imagination..."></textarea>
+            </div>
+
+            <div class="controls">
+                <div class="option">
+                    <label><i class="fas fa-image"></i> Size</label>
+                    <select id="size">
+                        <option value="512x512">512x512</option>
+                        <option value="768x768">768x768</option>
+                    </select>
+                </div>
+                <button id="generateBtn" class="glow-btn">
+                    <i class="fas fa-sparkles"></i> Generate
+                </button>
+            </div>
+
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Creating your masterpiece...</p>
+            </div>
+
+            <div class="result">
+                <div class="placeholder">
+                    <i class="fas fa-image"></i>
+                    <p>Your generated image will appear here</p>
+                </div>
+                <img id="outputImage" class="generated-image">
+                <a id="downloadBtn" class="download-btn">
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="glass-footer">
+        <div class="footer-content">
+            <p>Created with ❤️ by <span class="creator">ARIJIT SAHOO</span></p>
+            <div class="social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
